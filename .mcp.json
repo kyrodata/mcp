@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "kyrodata": {
+      "url": "https://mcp.kyrodata.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${KYRODATA_API_KEY}"
+      }
+    }
+  }
+}
