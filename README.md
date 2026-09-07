@@ -85,6 +85,25 @@ supply-and-demand tools are not.
 - **"No signal" is a real answer** where the data does not support a verdict.
 - **Read-only.** No tool writes, deletes or buys anything.
 
+## Running it as a local command (you almost certainly should not)
+
+`bridge/server.py` is a stdio-to-HTTP forwarder, and the `Dockerfile` packages
+it. **This is not the server.** The server is remote, and any client that speaks
+remote MCP should connect straight to the URL above — one hop fewer, nothing to
+install. The bridge exists for two cases only: a client that can only launch a
+local command, and a directory that will not score what it cannot build, start
+and introspect.
+
+```bash
+docker build -t kyrodata-mcp .
+docker run -i --rm -e KYRODATA_API_KEY=kd_live_... kyrodata-mcp
+```
+
+It implements no tools of its own: `initialize`, `tools/list` and `tools/call`
+are forwarded verbatim, so there is no second copy of the catalogue here that
+could drift from the server. Zero third-party dependencies, and the key never
+goes into the image.
+
 ## Notes
 
 - Transport is `streamable-http`. The deprecated HTTP+SSE transport is not served.
