@@ -1,4 +1,18 @@
-# Kyrodata — Brazilian trade, crop and commodity data over MCP
+<div align="center">
+
+<img src="logo.png" alt="Kyrodata" width="88" height="88">
+
+# Kyrodata
+
+**Brazilian trade, crop and commodity data over MCP**
+
+[![Tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/com.kyrodata/kyrodata/badges/score.svg)](https://glama.ai/mcp/connectors/com.kyrodata/kyrodata)
+[![catalog](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.serverInfo.version&label=catalog&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
+[![tools](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.tools.length&label=tools&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
+[![MCP registry](https://img.shields.io/badge/registry-com.kyrodata%2Fkyrodata-635BFF?style=flat-square)](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.kyrodata)
+[![License: MIT](https://img.shields.io/badge/license-MIT-635BFF?style=flat-square)](LICENSE)
+
+</div>
 
 Kyrodata is a **remote** [Model Context Protocol](https://modelcontextprotocol.io) server.
 There is nothing to install or run: point your agent at the hosted endpoint and give it
