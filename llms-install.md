@@ -27,7 +27,7 @@ repository — there is no server code here. Setup is one config block plus a ke
    client's own schema calls a remote streamable-HTTP server.
 
 3. **Verify** by listing tools. You should get 12 or more, all prefixed `kyrodata_`. The
-   cheapest check is `kyrodata_get_balance`, which costs no credits.
+   cheapest check is `kyrodata_get_credit_balance`, which costs no credits.
 
 ## Rules that matter
 

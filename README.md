@@ -61,16 +61,17 @@ demand balances, climate readings and commodity forecasts.
 | `kyrodata_fetch` | Open one public trade document by id |
 | `kyrodata_resolve_entity` | Resolve country, HS code or commodity |
 | `kyrodata_compare_trade` | Compare exports/imports between equal windows |
+| `kyrodata_list_trade_series` | Raw monthly trade series as rows |
 | `kyrodata_list_trade_partners` | Top partner countries with growth |
 | `kyrodata_get_heading_overview` | Overview of an HS heading (SH4) |
-| `kyrodata_compare_periods` | Build a like-for-like comparison window |
+| `kyrodata_resolve_comparison_window` | Build a like-for-like comparison window |
 | `kyrodata_get_supply_demand_balance` | Supply and demand balance sheet |
 | `kyrodata_get_climate_reading` | Climate reading and physical crop loss |
 | `kyrodata_get_hub_summary` † | Commodity hub summary and forecast verdict |
 | `kyrodata_explain_pyramid_level` † | Explain one level of the forecast pyramid |
 | `kyrodata_run_report` | Run one of the catalog reports |
 | `kyrodata_get_data_coverage` | Data coverage and latest closed month |
-| `kyrodata_get_balance` | Credit balance and limits for this key (free) |
+| `kyrodata_get_credit_balance` | Credit balance and limits for this key (free) |
 
 `tools/list` on the live endpoint is the authoritative list.
 
