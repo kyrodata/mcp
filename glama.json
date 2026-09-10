@@ -2,7 +2,7 @@
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "maintainers": ["rogeroliveira84"],
   "name": "kyrodata",
-  "description": "Brazilian foreign trade from MDIC/ComexStat -- exports and imports since 2000 by HS heading and partner country, in USD FOB and kilograms -- plus crop production, supply-and-demand balances, climate readings and commodity forecasts for hubs such as soybean, coffee, corn and beef. 14 read-only tools. Every comparison is like-for-like: two windows of equal length, each labelled with the period it actually measures, and every answer names its window and its source. Remote at https://mcp.kyrodata.com/mcp, authenticated with a bearer key or OAuth 2.1; on the official registry as com.kyrodata/kyrodata.",
+  "description": "Brazilian foreign trade from MDIC/ComexStat -- exports and imports since 2000 by HS heading and partner country, in USD FOB and kilograms -- plus crop production, supply-and-demand balances, climate readings and commodity forecasts for hubs such as soybean, coffee, corn and beef. 15 read-only tools. Every comparison is like-for-like: two windows of equal length, each labelled with the period it actually measures, and every answer names its window and its source. Remote at https://mcp.kyrodata.com/mcp, authenticated with a bearer key or OAuth 2.1; on the official registry as com.kyrodata/kyrodata.",
   "keywords": [
     "brazil",
     "trade-data",
