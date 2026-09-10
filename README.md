@@ -7,8 +7,8 @@
 **Brazilian trade, crop and commodity data over MCP**
 
 [![Quality, maintenance and endpoint health on Glama](https://glama.ai/mcp/servers/kyrodata/mcp/badges/score.svg)](https://glama.ai/mcp/servers/kyrodata/mcp)
-[![catalog](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.serverInfo.version&label=catalog&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
-[![tools](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.tools.length&label=tools&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
+[![catalog](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.serverInfo.version&label=catalog&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers?utm_source=github&utm_medium=readme&utm_campaign=mcp-directory)
+[![tools](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.tools.length&label=tools&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers?utm_source=github&utm_medium=readme&utm_campaign=mcp-directory)
 [![mcp registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0.1%2Fservers%3Fsearch%3Dcom.kyrodata%26version%3Dlatest&query=%24.servers%5B0%5D.server.version&label=mcp%20registry&color=635BFF&style=flat-square)](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.kyrodata&version=latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-635BFF?style=flat-square)](LICENSE)
 
@@ -62,7 +62,7 @@ gemini mcp add --transport http --header "Authorization: Bearer $KYRODATA_API_KE
 
 **Chat assistants** (claude.ai, ChatGPT) have no field for a key — they ask for your
 authorization instead. Add Kyrodata as a custom connector with the same URL and sign in when
-prompted. Walkthrough per client: **[kyrodata.com/developers](https://kyrodata.com/en-US/developers)**.
+prompted. Walkthrough per client: **[kyrodata.com/developers](https://kyrodata.com/en-US/developers?utm_source=github&utm_medium=readme&utm_campaign=mcp-directory)**.
 
 ## What you get
 
