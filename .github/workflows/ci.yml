@@ -1,0 +1,51 @@
+# A ponte e stdlib pura e nao tem servico para subir, entao o portao dela e
+# barato -- o que nao quer dizer vazio. `bridge/test_server.py` levanta um
+# servidor de mentira e afirma o TRANSPORTE: cabecalho de chave, sessao do
+# Streamable HTTP, corpo SSE, erro repassado como veio, notificacao sem
+# resposta. Nada de rede real e nada de chave.
+#
+# As duas versoes de Python nao sao enfeite: a imagem do repo roda 3.12 e a que
+# o Glama gera roda 3.14 (uv). Quebrar so numa das duas e um jeito realista de
+# esta ponte parar de subir num lugar so.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bridge:
+    name: bridge (py${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Compile
+        run: python -m compileall -q bridge
+
+      - name: Tests
+        run: python -m unittest discover -s bridge -v
+
+      # Estes tres arquivos sao lidos por terceiros -- diretorio, cliente e
+      # instalador. JSON quebrado aqui so aparece na ficha publica de alguem.
+      - name: Manifests are valid JSON
+        run: python -c "import json;[json.load(open(f)) for f in ['glama.json','mcp.json','plugin.json']];print('glama.json, mcp.json, plugin.json ok')"
