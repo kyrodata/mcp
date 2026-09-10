@@ -6,7 +6,7 @@
 
 **Brazilian trade, crop and commodity data over MCP**
 
-[![Tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/com.kyrodata/kyrodata/badges/score.svg)](https://glama.ai/mcp/connectors/com.kyrodata/kyrodata)
+[![Quality, maintenance and endpoint health on Glama](https://glama.ai/mcp/servers/kyrodata/mcp/badges/score.svg)](https://glama.ai/mcp/servers/kyrodata/mcp)
 [![catalog](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.serverInfo.version&label=catalog&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
 [![tools](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fkyrodata.com%2F.well-known%2Fmcp%2Fserver-card.json&query=%24.tools.length&label=tools&color=635BFF&style=flat-square)](https://kyrodata.com/en-US/developers)
 [![mcp registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0.1%2Fservers%3Fsearch%3Dcom.kyrodata%26version%3Dlatest&query=%24.servers%5B0%5D.server.version&label=mcp%20registry&color=635BFF&style=flat-square)](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.kyrodata&version=latest)
